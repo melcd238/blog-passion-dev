@@ -1,13 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  padding:0%;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  color: #FFFFFF;
+  background: #242535;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #181A2A, #242535 );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #181A2A, #242535); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
+button , .btn-submit{
+  background-color: #4B6BFB;
+  color: #FFFFFF;
+  border:none;
+  border-radius: 15px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.tag{
+  background-color: #4B6BFB;
+  color: #d0d0d8;
+  font-weight: 700;
+  font-size: large;
+  border:none;
+  border-radius: 15px;
+  padding: 10px 16px;
+  width: 90px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover{
+  background-color: #FFFFFF;
+  color: #4B6BFB;
+  border:none;
+  border-radius: 15px;
+  padding: 10px 16px;
+}
+.hover-text-custom {
+  transition: color 0.3s ease;
+}
+
+.hover-text-custom:hover {
+  color: #4B6BFB;
+}
+
+.active-text-custom {
+  color: #4B6BFB;
+  border: 1px solid #4B6BFB;
+  border-radius: 15px;
+  padding: 4px 8px;
+}
+.three-d-shadow {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+footer{
+  height: 260px;
+}
+
+
