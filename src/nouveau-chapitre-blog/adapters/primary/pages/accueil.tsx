@@ -3,7 +3,7 @@ import PrincipalArticle from "../components/principalArticle";
 
 const Accueil = () => {
     return (
-        <div className="mx-auto my-20 max-w-screen-xl px-10 flex flex-col items-center three-d-shadow">
+        <div className="three-d-shadow">
         <Biographie/>
         <PrincipalArticle/>
         </div>

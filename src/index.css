@@ -71,7 +71,7 @@ button:hover{
   padding: 4px 8px;
 }
 .three-d-shadow {
-  box-shadow: 0 0 6px rgba(36, 37, 53, 0.4);
+  box-shadow: 0 0 14px rgba(36, 37, 53, 0.8);
   border-radius: 15px;
 }
 

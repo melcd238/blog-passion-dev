@@ -4,6 +4,7 @@ import NewsletterSubscribe from "./newsletterSubscribe";
 
 
 const Footer = () => {
+
   return (
     <footer className="bg-gray-800 py-6">
       <div className="max-w-6xl mx-auto px-4">
@@ -15,10 +16,11 @@ const Footer = () => {
           <div className="w-full md:w-auto mb-4 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Navigation</h3>
             <ul className="text-gray-400">
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="/articles">Articles</Link></li>
-              <li><Link to="/bibliotheque">Bibliothèque</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/" className="hover-text-custom">Accueil</Link></li>
+              <li><Link to="/articles" className="hover-text-custom">Articles</Link></li>
+              <li><Link to="/bibliotheque" className="hover-text-custom">Bibliothèque</Link></li>
+              <li><Link to="/projets" className="hover-text-custom">Projets</Link></li>
+              <li><Link to="/contact" className="hover-text-custom">Contact</Link></li>
             </ul>
           </div>
           <div className="w-full md:w-auto mb-4 md:mb-0">
