@@ -19,7 +19,7 @@ body {
   color: #FFFFFF;
   background: #242535;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #181A2A, #242535 );  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #181A2A, #242535); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #181A2A, rgb(36, 37, 53)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 code {
@@ -71,12 +71,10 @@ button:hover{
   padding: 4px 8px;
 }
 .three-d-shadow {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 6px rgba(36, 37, 53, 0.4);
   border-radius: 15px;
 }
 
-footer{
-  height: 260px;
-}
+
 
 
