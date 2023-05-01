@@ -3,7 +3,7 @@ import PrincipalArticle from "../components/principalArticle";
 
 const Accueil = () => {
     return (
-        <div className="three-d-shadow">
+        <div>
         <Biographie/>
         <PrincipalArticle/>
         </div>

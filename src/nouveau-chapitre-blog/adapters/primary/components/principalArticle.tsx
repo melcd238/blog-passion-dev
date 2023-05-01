@@ -1,4 +1,4 @@
-
+import imgOrdi from '../assets/imgOrdi.jpg';
 
 
 const PrincipalArticle = () => {
@@ -8,10 +8,10 @@ const PrincipalArticle = () => {
               <h1 className="text-3xl font-bold">Titre de l'article</h1>
               <h2 className="text-lg text-gray-400 mb-2 italic">Sous-titre de l'article</h2>
               <p className="text-gray-400 mb-2 italic">Date de publication - Dernière publication</p>
-              <div className="tag mt-4">Tag</div>
+              <div className="bg-blue-500 text-white rounded px-2 py-1 inline-block mt-2">Reconversion</div>
     
          <div className="w-1/4 mt-4">
-              <img src="https://via.placeholder.com/150" alt="Image de l'article" />
+              <img src={imgOrdi} alt="orinateur"  className='rounded'/>
          </div>
        </div>
 

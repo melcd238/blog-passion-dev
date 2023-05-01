@@ -1,11 +1,11 @@
 import Livres from '../components/livres';
 import Apprentissage from '../components/apprentissage';
 import Blogs from '../components/blogs';
-import Podcasts from '../components/podcasts';
+
 
 const bibliotheque = () => {
     return (
-    <div className='three-d-shadow py-6'>
+    <div className='py-6'>
         <h1 className='text-center mb-5 text-3xl font-bold'>Ma bibliothèque</h1>
             <p className='leading-8 px-8'>Je vous invite à découvrir les ressources qui m'ont accompagné et continuent de m'accompagner
                 dans mon parcours en tant que développeuse. Vous y trouverez une sélection de livres sur le développement,
@@ -18,7 +18,6 @@ const bibliotheque = () => {
         <Livres/>
         <Apprentissage/>
         <Blogs/>
-        <Podcasts/>
     </div>
     );
     };
