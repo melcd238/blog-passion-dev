@@ -29,10 +29,10 @@ const Biographie = () => {
                 </p>
                 <div className="flex justify-center mt-5">
                     <a href="https://www.linkedin.com/in/melainadonati/" rel="noopener noreferrer" target="_blank"  className="mx-2">
-                        <img src={Linkdin} alt="logo lk" className="w-16 h-5"/>
+                        <img src={Linkdin} alt="logo lk" className="w-18 h-5"/>
                     </a>
                     <a href="https://github.com/melcd238" rel="noopener noreferrer" target="_blank"  className="mx-2">
-                        <img src={GitHub_Logo} alt="logo github" className="w-16 h-6"/>
+                        <img src={GitHub_Logo} alt="logo github" className="w-18 h-6"/>
                     </a>
                 </div>
             </div>

@@ -38,15 +38,14 @@ const Articles = () => {
     <div className="px-10">
       <h1 className="text-2xl font-bold text-center mb-20">Mes publications</h1>
       <p className='mb-6 italic text-gray-500'>Cliquez sur un tag pour afficher les articles associés et trouver facilement les sujets qui vous passionnent:</p>
-      <div className="flex flex-wrap mb-8 space-x-2">
-        {tags.map((tag, index) => (
-          <Link
-            key={index}
-            to={`/tags/${tag}`}
-            className="bg-blue-500 text-white rounded px-2 py-1 hover:bg-blue-400 hover:text-white transition-colors"
+      <div className="flex flex-wrap mb-8">
+        {tags.map((tag) => (
+          <button
+            key={tag}
+            className="bg-blue-500 text-white rounded px-1 py-1 m-1 hover:bg-blue-400 hover:text-white transition-colors"
           >
             {tag}
-          </Link>
+          </button>
         ))}
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

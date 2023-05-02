@@ -6,6 +6,7 @@ import Articles from "./nouveau-chapitre-blog/adapters/primary/pages/articles";
 import Bibliotheque from "./nouveau-chapitre-blog/adapters/primary/pages/bibliotheque";
 import Projets from "./nouveau-chapitre-blog/adapters/primary/pages/projets";
 import Contact from "./nouveau-chapitre-blog/adapters/primary/pages/contact";
+import Article from "./nouveau-chapitre-blog/adapters/primary/pages/article";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/articles" element={<Articles />} />
+            <Route path="/articles/:id" element={<Article />} />
             <Route path="/bibliotheque" element={<Bibliotheque />} />
             <Route path="/projets" element={<Projets />} />
             <Route path="/contact" element={<Contact />} />
