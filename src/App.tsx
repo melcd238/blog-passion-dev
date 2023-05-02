@@ -7,15 +7,17 @@ import Bibliotheque from "./nouveau-chapitre-blog/adapters/primary/pages/bibliot
 import Projets from "./nouveau-chapitre-blog/adapters/primary/pages/projets";
 import Contact from "./nouveau-chapitre-blog/adapters/primary/pages/contact";
 import Article from "./nouveau-chapitre-blog/adapters/primary/pages/article";
+import AboutMe from "./nouveau-chapitre-blog/adapters/primary/pages/quiSuisJe";
 
 function App() {
     return (
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow mx-auto my-20 max-w-screen-xl px-10 flex flex-col items-center">
+          <main className="flex-grow mx-auto my-20 max-w-screen-xl  flex flex-col items-center">
           <Routes>
             <Route path="/" element={<Accueil />} />
+            <Route path="/qui-suis-je" element={<AboutMe />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/articles/:id" element={<Article />} />
             <Route path="/bibliotheque" element={<Bibliotheque />} />

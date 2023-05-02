@@ -3,7 +3,7 @@ import imgOrdi from '../assets/imgOrdi.jpg';
 
 const PrincipalArticle = () => {
     return (
-      <div className="mx-10 my-10">
+      <div className="mx-10 my-16">
          <div className="flex-1">
               <h1 className="text-3xl font-bold">Titre de l'article</h1>
               <h2 className="text-lg text-gray-400 mb-2 italic">Sous-titre de l'article</h2>

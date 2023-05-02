@@ -1,11 +1,11 @@
-import Biographie from "../components/biographie";
+import Introduction from "../components/introduction";
 import PrincipalArticle from "../components/principalArticle";
 
 const Accueil = () => {
     return (
         <div>
-        <Biographie/>
-        <PrincipalArticle/>
+            <Introduction/>
+            <PrincipalArticle/>
         </div>
     );
     };

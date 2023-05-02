@@ -14,8 +14,9 @@ const Header =()=>{
                  <img src={Logo} alt="Logo du blog" className="w-full h-full object-contain" />
              </div>
              <nav>
-                <ul className="flex space-x-2 md:space-x-5 text-x1 md:text-xl">
+                <ul className="flex space-x-2 text-sm lg:space-x-3 lg:text-lg">
                     <li><NavLink to="/" className={`${isActive('/') ? 'active-text-custom' : 'hover-text-custom'}`}>Accueil</NavLink></li>
+                    <li><NavLink to="/qui-suis-je" className={`${isActive('/qui-suis-je') ? 'active-text-custom' : 'hover-text-custom'}`}>Qui suis-je?</NavLink></li>
                     <li><NavLink to="/articles" className={`${isActive('/articles') ? 'active-text-custom' : 'hover-text-custom'}`}>Articles</NavLink></li>
                     <li><NavLink to="/bibliotheque" className={`${isActive('/bibliotheque') ? 'active-text-custom' : 'hover-text-custom'}`}>Bibliothèque</NavLink></li>
                     <li><NavLink to="/projets" className={`${isActive('/projets') ? 'active-text-custom' : 'hover-text-custom'}`}>Projets</NavLink></li>

@@ -5,7 +5,7 @@ import Linkdin from '../assets/Linkdin.png';
 
 const Biographie = () => {
     return (
-        <div className="bg-gray-800 p-5  text-gray-300 mx-10 my-10 border-2 border-blue-500 rounded-lg">
+        <div className="bg-gray-800 p-5  text-gray-300  border-2 border-blue-500 rounded-lg">
             <div className="text-center items-center  mx-auto">
                 <div className="flex items-center justify-center">
                     <img src={pictMe} alt="mélaïna donati profil" className="rounded-full mr-4" />
