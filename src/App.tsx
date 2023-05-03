@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./nouveau-chapitre-blog/adapters/primary/components/header";
-import Footer from "./nouveau-chapitre-blog/adapters/primary/components/footer";
-import Accueil from "./nouveau-chapitre-blog/adapters/primary/pages/accueil";
-import Articles from "./nouveau-chapitre-blog/adapters/primary/pages/articles";
-import Bibliotheque from "./nouveau-chapitre-blog/adapters/primary/pages/bibliotheque";
-import Projets from "./nouveau-chapitre-blog/adapters/primary/pages/projets";
-import Contact from "./nouveau-chapitre-blog/adapters/primary/pages/contact";
-import Article from "./nouveau-chapitre-blog/adapters/primary/pages/article";
-import AboutMe from "./nouveau-chapitre-blog/adapters/primary/pages/quiSuisJe";
+import Header from "./presentation/components/header";
+import Footer from "./presentation/components/footer";
+import Accueil from "./presentation/pages/accueil";
+import Articles from "./presentation/pages/articles";
+import Bibliotheque from "./presentation/pages/bibliotheque";
+import Projets from "./presentation/pages/projets";
+import Contact from "./presentation/pages/contact";
+import Article from "./presentation/pages/article";
+import AboutMe from "./presentation/pages/quiSuisJe";
 
 function App() {
     return (
