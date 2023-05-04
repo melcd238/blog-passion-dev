@@ -42,7 +42,7 @@ const Articles = () => {
                 <img src={article.imgUrl} alt={article.title} className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col justify-between flex-grow p-2">
-                <h2 className="text-lg font-bold mb-2">{article.title}</h2>
+                <h2 className="text-lg font-bold mb-2 h-14">{article.title}</h2>
                 <p className="text-gray-300 mb-2">{article.summary}</p>
                 <div className="flex justify-between items-center">
                   <p className="text-gray-500 italic">{article.author}</p>
