@@ -1,10 +1,12 @@
-import { ArticleRepository } from "../../domain/repositories/ArticleRepository";
+import { IarticleRepository } from "../../domain/repositories/ArticleRepository";
 import { Article } from "../../domain/entities/Article";
 import ImgOrdi from "../../presentation/assets/imgOrdi.jpg";
 
 
-export class FakeArticleRepository implements ArticleRepository {
-    private articles: Article[] = [
+export const  FakeArticleRepository: IarticleRepository = {
+    getAllArticles:  () => { 
+        
+        let articles : Article [] = [
         {
             id: "1",
             title: "La programmation fonctionnelle en JavaScript",
@@ -54,9 +56,6 @@ export class FakeArticleRepository implements ArticleRepository {
             imgUrl: ImgOrdi,
         }
     ];
-
-    async getAllArticles(): Promise<Article[]> {
-        return this.articles;
-    }
-    
+    return Promise.resolve(articles);
+    },
 };

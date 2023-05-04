@@ -1,15 +1,17 @@
-import { ArticleRepository } from '../domain/repositories/ArticleRepository';
+import { IarticleRepository } from '../domain/repositories/ArticleRepository';
+import { Article } from '../domain/entities/Article';
+import { displayArticles } from '../usecases/displayArticles';
 import { FakeArticleRepository } from '../data/repositories/FakeArticleRepository';
-import { DisplayArticles } from '../usecases/displayArticles';
 
+export const DependencyInjection = {
+  getArticleRepository: (): IarticleRepository => {
+    return FakeArticleRepository;
+  },
 
-export class DependencyInjection {
-  static getArticleRepository(): ArticleRepository {
-    return new FakeArticleRepository();
-  }
-
-  static getDisplayArticles(): DisplayArticles {
-    const articleRepository = this.getArticleRepository();
-    return new DisplayArticles(articleRepository);
-  }
-}
+  getDisplayArticles: () => {
+    const articleRepository = DependencyInjection.getArticleRepository();
+    return async (): Promise<Article[]> => {
+      return displayArticles(articleRepository);
+    };
+  },
+};

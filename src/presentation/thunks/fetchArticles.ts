@@ -7,7 +7,7 @@ export const fetchArticles = () => async (dispatch: AppDispatch) => {
   dispatch(setLoading(true));
 
   const displayArticles = DependencyInjection.getDisplayArticles();
-  const articles = await displayArticles.execute();
+  const articles = await displayArticles();
 
   dispatch(setArticles(articles));
   dispatch(setLoading(false));
