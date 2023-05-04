@@ -1,5 +1,5 @@
-import { IbiographieRepository } from "../domain/repositories/BiographieRepository";
-import { Biographie } from "../domain/entities/Biographie";
+import { IbiographieRepository } from "../../domain/repositories/BiographieRepository";
+import { Biographie } from "../../domain/entities/Biographie";
 
 
 export const displayBiographies = async (biographieRepository: IbiographieRepository): Promise<Biographie> => {

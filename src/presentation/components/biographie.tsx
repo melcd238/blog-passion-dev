@@ -4,7 +4,7 @@ import Linkdin from '../assets/Linkdin.png';
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../redux/store";
-import { fetchBiographie } from '../thunks/fetchBiographie';
+import { fetchBiographie } from '../thunks/fetchBiographie/fetchBiographie';
 
 
 const Biographie = () => {

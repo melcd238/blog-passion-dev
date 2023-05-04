@@ -1,4 +1,4 @@
-import { FakeArticleRepository } from "../../data/repositories/FakeArticleRepository";
+import { FakeArticleRepository } from "../../../data/repositories/FakeArticleRepository";
 import { displayArticles } from "./displayArticles";
 
 

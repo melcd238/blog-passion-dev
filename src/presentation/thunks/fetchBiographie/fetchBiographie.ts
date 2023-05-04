@@ -1,6 +1,6 @@
-import { AppDispatch } from '../redux/store';
-import { DependencyInjection } from '../../infrastructure/dependencyInjections';
-import { setLoading, setBiographie } from '../redux/biographieSlice';
+import { AppDispatch } from '../../redux/store';
+import { DependencyInjection } from '../../../infrastructure/dependencyInjections';
+import { setLoading, setBiographie } from '../../redux/biographieSlice';
 
 
 export const fetchBiographie = () => async (dispatch: AppDispatch) => {

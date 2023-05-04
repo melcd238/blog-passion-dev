@@ -1,5 +1,5 @@
-import { IarticleRepository } from "../domain/repositories/ArticleRepository";
-import { Article } from "../domain/entities/Article";
+import { IarticleRepository } from "../../domain/repositories/ArticleRepository";
+import { Article } from "../../domain/entities/Article";
 
 
 

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../redux/store";
-import { fetchArticles } from "../thunks/fetchArticles";
+import { fetchArticles } from "../thunks/fetchArticles/fetchArticles";
 
 
 

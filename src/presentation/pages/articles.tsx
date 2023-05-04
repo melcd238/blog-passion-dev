@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { RootState, AppDispatch } from '../redux/store';
-import { fetchArticles } from '../thunks/fetchArticles';
+import { fetchArticles } from '../thunks/fetchArticles/fetchArticles';
 
 
 const Articles = () => {

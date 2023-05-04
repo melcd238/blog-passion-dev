@@ -25,4 +25,4 @@ export const FakeBiographieRepository: IbiographieRepository = {
     }
         return Promise.resolve(bio);
 }
-}
+} 

@@ -1,4 +1,4 @@
-import { FakeBiographieRepository } from "../../data/repositories/FakeBiographieRepository";
+import { FakeBiographieRepository } from "../../../data/repositories/FakeBiographieRepository";
 import { displayBiographies } from "./displayBiographie";
 
 

@@ -1,6 +1,6 @@
-import { AppDispatch } from '../redux/store';
-import { setLoading, setArticles } from '../redux/articleSlice';
-import { DependencyInjection } from '../../infrastructure/dependencyInjections';
+import { AppDispatch } from '../../redux/store';
+import { setLoading, setArticles } from '../../redux/articleSlice';
+import { DependencyInjection } from '../../../infrastructure/dependencyInjections';
 
 
 export const fetchArticles = () => async (dispatch: AppDispatch) => {

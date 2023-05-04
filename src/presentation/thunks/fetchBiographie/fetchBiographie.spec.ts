@@ -1,5 +1,5 @@
-import { DependencyInjection } from "../../infrastructure/dependencyInjections";
-import { store } from "../redux/store";
+import { DependencyInjection } from "../../../infrastructure/dependencyInjections";
+import { store } from "../../redux/store";
 import { fetchBiographie } from "./fetchBiographie";
 
 

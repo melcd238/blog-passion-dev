@@ -1,10 +1,10 @@
-import Introduction from "../components/introduction";
+import BreakingNews from "../components/breakingNews";
 import PrincipalArticle from "../components/principalArticle";
 
 const Accueil = () => {
     return (
         <div>
-            <Introduction/>
+            <BreakingNews/>
             <PrincipalArticle/>
         </div>
     );
