@@ -1,6 +1,6 @@
-import { IarticleRepository } from "../../domain/repositories/ArticleRepository";
-import { Article } from "../../domain/entities/Article";
-import ImgOrdi from "../../presentation/assets/imgOrdi.jpg";
+import { IarticleRepository } from "../../coreLogic/domain/repositories/ArticleRepository";
+import { Article } from "../../coreLogic/domain/entities/Article";
+
 
 
 export const  FakeArticleRepository: IarticleRepository = {
@@ -21,7 +21,7 @@ export const  FakeArticleRepository: IarticleRepository = {
             publicationDate: "01-05-2023",
             author: "Mélaïna Donati",
             tag: "Apprentissage",
-            imgUrl: ImgOrdi,
+            imgUrl: "https://picsum.photos/200/300",
         },
         {
             id: "2",
@@ -37,7 +37,7 @@ export const  FakeArticleRepository: IarticleRepository = {
             publicationDate: "01-04-2023",
             author: "Mélaïna Donati",
             tag: "Apprentissage",
-            imgUrl: ImgOrdi,
+            imgUrl: "https://picsum.photos/200/300",
         },
         {
             id: "3",
@@ -53,7 +53,7 @@ export const  FakeArticleRepository: IarticleRepository = {
             publicationDate: "01-03-2023",
             author: "Mélaïna Donati",
             tag: "JS-React",
-            imgUrl: ImgOrdi,
+            imgUrl: "https://picsum.photos/200/300",
         }
     ];
     return Promise.resolve(articles);

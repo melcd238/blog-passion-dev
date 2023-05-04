@@ -1,6 +1,6 @@
-import { IarticleRepository } from '../domain/repositories/ArticleRepository';
-import { Article } from '../domain/entities/Article';
-import { displayArticles } from '../usecases/displayArticles';
+import { IarticleRepository } from '../coreLogic/domain/repositories/ArticleRepository';
+import { Article } from '../coreLogic/domain/entities/Article';
+import { displayArticles } from '../coreLogic/usecases/displayArticles';
 import { FakeArticleRepository } from '../data/repositories/FakeArticleRepository';
 
 export const DependencyInjection = {

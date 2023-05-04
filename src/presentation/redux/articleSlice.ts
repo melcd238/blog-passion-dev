@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Article } from '../../domain/entities/Article';
+import { Article } from '../../coreLogic/domain/entities/Article';
 
 interface ArticleState {
   articles: Article[];
