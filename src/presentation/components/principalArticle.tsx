@@ -32,8 +32,8 @@ const PrincipalArticle = () => {
        </div>
 
         <div className="my-10" >
-        {principalArticle?.content.split("\n").map((paragraph, index) => (
-           <p key={index} className="leading-8">{paragraph}</p>
+        {principalArticle?.content.split("\n\n").map((paragraph, index) => (
+           <p key={index} className="leading-8 pt-4">{paragraph}</p>
          ))}
         </div>
         
