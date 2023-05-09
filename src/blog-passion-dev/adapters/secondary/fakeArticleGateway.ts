@@ -6,8 +6,8 @@ export class FakeArticleGateway implements ArticleGateway {
     private _currentArticle: Article | null = null;
 
     async getCurrentArticle(): Promise<Article> {
-        if (this._currentArticle === null) {
-            throw new Error("No article");
+        if(this._currentArticle === null) {
+            throw new Error("No current article");
         }
         return this._currentArticle;
     }
