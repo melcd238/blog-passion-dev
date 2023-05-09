@@ -47,9 +47,10 @@ describe("retrieveCurrentArticle", () => {
         expectCurrentArticle(currentArticle);
     });
 
-    it("should throw an error when trying to get a non-set current article", async () => {
-        await expect(articleGateway.getCurrentArticle()).rejects.toThrow("No current article");
+    it("should handle error when trying to get a non-set current article", async () => {
+        await expect(store.dispatch(retrieveCurrentArticle())).rejects.toThrow("No current article");
     });
+    
     
     
     
