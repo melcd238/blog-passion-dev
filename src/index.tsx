@@ -1,21 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { store } from './presentation/redux/store';
+import { Provider } from 'react-redux';
+import { initReduxStore } from './blog-passion-dev/store/reduxStore';
+import { wireDependencies } from './blog-passion-dev/adapters/primary/dependenciesWiring';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement);
 
-  
+const store = initReduxStore(wireDependencies());  
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-    <App />
-    </Provider>
+     <Provider store={store}>
+        <App />
+      </Provider>
   </React.StrictMode>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function

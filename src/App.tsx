@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./presentation/components/header";
-import Footer from "./presentation/components/footer";
-import Accueil from "./presentation/pages/accueil";
-import Articles from "./presentation/pages/articles";
-import Bibliotheque from "./presentation/pages/bibliotheque";
-import Projets from "./presentation/pages/projets";
-import Contact from "./presentation/pages/contact";
-import Article from "./presentation/pages/article";
-import AboutMe from "./presentation/pages/quiSuisJe";
+import Header from "./blog-passion-dev/adapters/primary/components/header";
+import Footer from "./blog-passion-dev/adapters/primary/components/footer";
+import Accueil from "./blog-passion-dev/adapters/primary/pages/accueil";
+import Articles from "./blog-passion-dev/adapters/primary/pages/articles";
+import Bibliotheque from "./blog-passion-dev/adapters/primary/pages/bibliotheque";
+import Projets from "./blog-passion-dev/adapters/primary/pages/projets";
+import Contact from "./blog-passion-dev/adapters/primary/pages/contact";
+import Article from "./blog-passion-dev/adapters/primary/pages/article";
+import AboutMe from "./blog-passion-dev/adapters/primary/pages/quiSuisJe";
 
 function App() {
     return (
