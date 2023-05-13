@@ -3,6 +3,7 @@ import { AppState } from './appState';
 import { useDispatch } from "react-redux";
 import { ArticleGateway } from '../corelogic/gateways/articleGateway';
 import { currentArticlerReducer as currentArticle } from './reducers/currentArticleReducer';
+import { currentBreakingNewsReducer as currentBreakingNews } from './reducers/currentBreakingNewsReducer';
 
 export type Dependencies ={
   articleGateway: ArticleGateway;
@@ -14,6 +15,7 @@ export const initReduxStore = (
   return configureStore({
     reducer: {
       currentArticle,
+      currentBreakingNews,
     },
     devTools: true,
     middleware: (getDefaultMiddleware) => {

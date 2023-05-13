@@ -1,5 +1,6 @@
-import { Article } from "../../store/appState";
+import { Article, BreakingNews } from "../../store/appState";
 
 export interface ArticleGateway {
     getCurrentArticle: () => Promise<Article>;
+    getCurrentBreakingNews: () => Promise<BreakingNews>;
 }

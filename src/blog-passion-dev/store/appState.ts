@@ -5,6 +5,9 @@ export interface AppState {
     currentArticle: {
       data: Article | null;
     };
+    currentBreakingNews: {
+      data: BreakingNews | null;
+    };
    /* allArticles: {
       data: Record<ArticleId, Article> | null;
     };*/
@@ -21,5 +24,11 @@ export interface AppState {
     content: string;
     tag: string;
     imgUrl: string; 
+  };
+
+  export type BreakingNews = {
+    title: string;
+    content: string;
+    author: string;
   };
   
