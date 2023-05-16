@@ -1,4 +1,4 @@
-import { FakeArticleGateway } from "../../../adapters/secondary/fakeArticleGateway";
+import { FakeArticleGateway } from "../../../adapters/secondary/fakeBlogGateway";
 import { AppState, BreakingNews } from "../../../store/appState";
 import { initReduxStore, ReduxStore } from "../../../store/reduxStore";
 import { retrieveCurrentBreakingNews } from "./retrieveCurrentBreakingNews";
@@ -6,16 +6,16 @@ import { retrieveCurrentBreakingNews } from "./retrieveCurrentBreakingNews";
 
 describe('retrieveCurrentBreakingNews', () => {
     let store: ReduxStore;
-    let articleGateway: FakeArticleGateway;
+    let breakingnewsGateway: FakeArticleGateway;
     let initialState: AppState;
 
     beforeEach(() => {
-        articleGateway = new FakeArticleGateway();
-        store = initReduxStore({articleGateway});
+        breakingnewsGateway = new FakeArticleGateway();
+        store = initReduxStore({articleGateway: breakingnewsGateway});
         initialState = store.getState();
     });
 
-    it("should not contain any article initially", () => {
+    it("should not contain any breaking news initially", () => {
        expectCurrentBreakingNews(null);
     });
 
@@ -25,7 +25,7 @@ describe('retrieveCurrentBreakingNews', () => {
             content: "This is the breaking news",
             author: "Mélaïna Donati",
         };
-        articleGateway.setCurrentBreakingNews(breakingNews);
+        breakingnewsGateway.setCurrentBreakingNews(breakingNews);
         await store.dispatch(retrieveCurrentBreakingNews());
         expectCurrentBreakingNews(breakingNews);
     });

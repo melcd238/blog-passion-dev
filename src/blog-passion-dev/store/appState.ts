@@ -8,15 +8,22 @@ export interface AppState {
     currentBreakingNews: {
       data: BreakingNews | null;
     };
-   /* allArticles: {
-      data: Record<ArticleId, Article> | null;
-    };*/
+    currentBio: {
+      data: Bio | null;
+    };
+    allArticles: {
+      data: ArticlesArray | null;
+    };
+    currentLibrairies: {
+      data: Librairies | null;
+    };
   }
   
-  export type ArticleId = string;
-  
+  //export type ArticleId = string;
+  export type ArticlesArray = Article[];
+
   export type Article = {
-    id: ArticleId;
+    id: string;
     author: string;
     publishDate: string; 
     title: string;
@@ -31,4 +38,39 @@ export interface AppState {
     content: string;
     author: string;
   };
+
+  export type Bio = {
+    name: string;
+    fonction: string;
+    description: string;
+    picture: string;
+    body: string;
+    lkdn: string;
+    github: string;
+
+  };
+
+  export type Librairies = {
+    books: {
+      title: string;
+      picture: string;
+      link: string;
+    }[],
+    learning: {
+      title: string;
+      picture: string;
+      link: string;
+    }[],
+    blogs: {
+      title: string;
+      picture: string;
+      link: string;
+    }[],
+    podcasts: {
+      title: string;
+      picture: string;
+      link: string;
+    }[],
+  };
+
   

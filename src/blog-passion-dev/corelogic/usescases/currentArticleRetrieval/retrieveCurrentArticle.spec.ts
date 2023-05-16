@@ -1,6 +1,6 @@
 import { initReduxStore, ReduxStore } from "../../../store/reduxStore";
 import { retrieveCurrentArticle } from "./retrieveCurrentArticle";
-import { FakeArticleGateway } from "../../../adapters/secondary/fakeArticleGateway";
+import { FakeArticleGateway } from "../../../adapters/secondary/fakeBlogGateway";
 import { AppState, Article } from "../../../store/appState";
 
 

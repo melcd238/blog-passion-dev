@@ -1,9 +1,12 @@
 import { Action, AnyAction, configureStore, Store, ThunkAction, ThunkDispatch } from '@reduxjs/toolkit';
 import { AppState } from './appState';
 import { useDispatch } from "react-redux";
-import { ArticleGateway } from '../corelogic/gateways/articleGateway';
+import { ArticleGateway } from '../corelogic/gateways/blogGateway';
 import { currentArticlerReducer as currentArticle } from './reducers/currentArticleReducer';
 import { currentBreakingNewsReducer as currentBreakingNews } from './reducers/currentBreakingNewsReducer';
+import { currentBioReducer as currentBio } from './reducers/currentBioReducer';
+import { allArticlesReducer as allArticles } from './reducers/allArticlesReducer';
+import { currentLibReducer as currentLibrairies } from './reducers/currentLibReducer';
 
 export type Dependencies ={
   articleGateway: ArticleGateway;
@@ -16,6 +19,9 @@ export const initReduxStore = (
     reducer: {
       currentArticle,
       currentBreakingNews,
+      currentBio,
+      allArticles,
+      currentLibrairies,
     },
     devTools: true,
     middleware: (getDefaultMiddleware) => {

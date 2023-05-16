@@ -53,8 +53,6 @@ button:hover{
   background-color: #FFFFFF;
   color: #4B6BFB;
   border:none;
-  border-radius: 15px;
-  padding: 10px 16px;
 }
 .hover-text-custom {
   transition: color 0.3s ease;

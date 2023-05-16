@@ -1,6 +1,7 @@
 import Livres from '../components/livres';
 import Apprentissage from '../components/apprentissage';
 import Blogs from '../components/blogs';
+import Podcasts from '../components/podcasts';
 
 
 const bibliotheque = () => {
@@ -18,6 +19,7 @@ const bibliotheque = () => {
         <Livres/>
         <Apprentissage/>
         <Blogs/>
+        <Podcasts/>
     </div>
     );
     };
